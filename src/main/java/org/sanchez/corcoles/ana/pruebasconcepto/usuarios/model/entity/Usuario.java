@@ -31,6 +31,9 @@ public class Usuario implements Serializable {
      * EAGER, al realizar la consulta obtendrá el usuario + roles
      */
     @ManyToMany(fetch = FetchType.LAZY)
+    //Con la anotación @JoinTable podemos modificar el nombre de la tabla y con @JoinColumn podemos modificar el nombre de las foreign key
+    //Ponemos la anotación @UniqueConstraint para que un usuario no pueda tener el rol repetido (alter table usuarios_roles add constraint UKqjaspm7473pnu9y4jxhrds8r2 unique (usuario_id, role_id))
+    @JoinTable(name = "usuarios_roles", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "role_id"), uniqueConstraints = {@UniqueConstraint(columnNames = {"usuario_id", "role_id"})})
     private List<Rol> roles;
 
     public Long getId() {
