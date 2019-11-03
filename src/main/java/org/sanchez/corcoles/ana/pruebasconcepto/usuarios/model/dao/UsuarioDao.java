@@ -1,6 +1,6 @@
 package org.sanchez.corcoles.ana.pruebasconcepto.usuarios.model.dao;
 
-import org.sanchez.corcoles.ana.pruebasconcepto.usuarios.model.entity.Usuario;
+import org.sanchez.corcoles.ana.pruebasconcepto.usuarios.commons.model.entity.Usuario;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

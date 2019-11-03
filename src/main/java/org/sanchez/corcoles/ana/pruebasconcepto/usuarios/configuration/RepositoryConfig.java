@@ -1,7 +1,7 @@
 package org.sanchez.corcoles.ana.pruebasconcepto.usuarios.configuration;
 
-import org.sanchez.corcoles.ana.pruebasconcepto.usuarios.model.entity.Rol;
-import org.sanchez.corcoles.ana.pruebasconcepto.usuarios.model.entity.Usuario;
+import org.sanchez.corcoles.ana.pruebasconcepto.usuarios.commons.model.entity.Rol;
+import org.sanchez.corcoles.ana.pruebasconcepto.usuarios.commons.model.entity.Usuario;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
