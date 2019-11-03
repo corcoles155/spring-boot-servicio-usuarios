@@ -4,3 +4,4 @@ Servicio con Spring Boot 2.1.5 con Eureka + h2database (BBDD en memoria) + Sprin
 
 Intervienen los repos:
 - spring-boot-eureka-server
+- spring-boot-zuul-server
